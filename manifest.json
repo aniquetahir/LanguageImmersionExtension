@@ -1,0 +1,24 @@
+{
+
+  "manifest_version": 2,
+  "name": "Language Immersion",
+  "version": "1.0",
+
+  "description": "Allows you to immerse yourself in another language. Great for learning new languages",
+
+//  "icons": {
+//    "48": "icons/border-48.png"
+//  },
+  "applications": {
+    "gecko": {
+      "id": "languageimmersion@example.com"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/"],
+      "js": ["immerse.js"]
+    }
+  ]
+
+}
